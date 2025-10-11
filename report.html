@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сообщить о проблеме - Уют.Тут</title>
+    <!-- Используйте тот же CSS что и в index.html -->
+</head>
+<body>
+    <header>
+        <!-- Тот же хедер что и в index.html -->
+    </header>
+
+    <div class="container">
+        <div class="report-container">
+            <h2 style="margin-bottom: 1.5rem; text-align: center;">Сообщить о проблеме</h2>
+            
+            <form class="report-form">
+                <div class="form-group">
+                    <label for="problemType">Тип проблемы</label>
+                    <select id="problemType" class="form-control" required>
+                        <option value="">Выберите тип проблемы</option>
+                        <option value="road">Ямы на дорогах</option>
+                        <option value="garbage">Свалки мусора</option>
+                        <option value="lighting">Неисправные фонари</option>
+                        <option value="water">Протечки воды</option>
+                        <option value="other">Другое</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="address">Адрес проблемы</label>
+                    <input type="text" id="address" class="form-control" placeholder="Введите адрес или выберите на карте" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Местоположение на карте</label>
+                    <div class="map-placeholder">
+                        [Здесь будет интерактивная карта]
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Описание проблемы</label>
+                    <textarea id="description" class="form-control" placeholder="Подробно опишите проблему..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Фотографии проблемы</label>
+                    <div class="file-upload">
+                        <p>Перетащите сюда файлы или нажмите для загрузки</p>
+                        <input type="file" multiple accept="image/*" style="display: none;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Контактные данные (для обратной связи)</label>
+                    <input type="text" id="contact" class="form-control" placeholder="Email или телефон">
+                </div>
+
+                <button type="submit" class="btn btn-large" style="align-self: flex-start;">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Тот же футер что и в index.html -->
+    </footer>
+</body>
+</html>
